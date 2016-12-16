@@ -4,7 +4,7 @@ header-img: "img/zhihu.jpg"
 tagline: "cn"  
 description: "小🍪的生活笔记"  
 baseurl: ""
-url: "http://cnfeat"  
+#url: "http://cnfeat"  
 
 # About/contact
 owner: 
@@ -13,8 +13,8 @@ owner:
   bio: "写不出就去吃免费饼干好了"
 
 # Data
-gavatar: http://dreamofbook.qiniudn.com/Az..png
-favicon: img/favicon.png
+#gavatar: http://dreamofbook.qiniudn.com/Az..png
+#favicon: img/favicon.png
 
 douban_username:  
 twitter_username: 
