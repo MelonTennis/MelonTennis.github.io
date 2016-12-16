@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "🍪These and Thoes🍪"
-description: "生活是探索的过程"  
+description: "春风又绿江南岸"  
 header-img: "img/semantic.jpg"  
 ---
 
