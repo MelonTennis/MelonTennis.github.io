@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Nice to meet you🍪"
-description: "续命法宝小饼干 | My heart is in the work"
+description: "续命法宝小饼干 | You are amazing"
 header-img: "img/green.jpg"
 ---
 
