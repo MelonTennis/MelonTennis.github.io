@@ -5,7 +5,7 @@ description: "春风又绿江南岸 | Searching in O(1)"
 header-img: "img/semantic.jpg"
 ---
 
-# TAGS ～ 🏷️列表
+* TAGS ～ 🏷️列表
 <!-- Main Content -->
 <div class="container">
 	<div class="row">
