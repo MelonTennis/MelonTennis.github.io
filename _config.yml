@@ -1,16 +1,16 @@
 # Site settings
 title: freeCookie_免费小🍪
 header-img: "img/zhihu.jpg"
-tagline: "cn"  
+#tagline: "cn"  
 description: "小🍪的生活笔记"  
-baseurl: ""
+#baseurl: ""
 #url: "http://cnfeat"  
 
 # About/contact
-owner: 
-  name: " CnFeat"
-  email: CnFeat@gmail.com
-  bio: "写不出就去吃免费饼干好了"
+#owner: 
+#  name: " CnFeat"
+#  email: CnFeat@gmail.com
+#  bio: "写不出就去吃免费饼干好了"
 
 # Data
 #gavatar: http://dreamofbook.qiniudn.com/Az..png
