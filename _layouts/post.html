@@ -63,7 +63,7 @@ layout: default
 
                 <hr>
 
-
+                {% if site.duoshuo_share && site.duoshuo_username %}
                 <!-- 多说 Share start -->
                 </style>
                 <div class="ds-share"
@@ -86,7 +86,7 @@ layout: default
                 <hr>
                 </div>
                 <!-- 多说 Share end-->
-                
+                {% endif %}
 
 
                 <ul class="pager">
@@ -109,7 +109,7 @@ layout: default
                 </ul>
 
 
-
+                {% if site.duoshuo_username %}
                 <!-- 多说评论框 start -->
                 <div class="comment">
                     <div class="ds-thread"
@@ -119,12 +119,15 @@ layout: default
                     </div>
                 </div>
                 <!-- 多说评论框 end -->
-              
+                {% endif %}
+
+                {% if site.disqus_username %}
                 <!-- disqus 评论框 start -->
                 <div class="comment">
                     <div id="disqus_thread" class="disqus-thread"></div>
                 </div>
                 <!-- disqus 评论框 end -->
+                {% endif %}
 
             </div>  
 
@@ -184,6 +187,7 @@ layout: default
 </article>
 
 
+{% if site.duoshuo_username %}
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
     // dynamic User by Hux
@@ -201,8 +205,10 @@ layout: default
     })();
 </script>
 <!-- 多说公共JS代码 end -->
+{% endif %}
 
 
+{% if site.disqus_username %}
 <!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
@@ -217,6 +223,7 @@ layout: default
     })();
 </script>
 <!-- disqus 公共JS代码 end -->
+{% endif %}
 
 
 {% if site.anchorjs %}
