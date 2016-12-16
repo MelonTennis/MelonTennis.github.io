@@ -1,8 +1,8 @@
 # Site settings
-title: freeCookie_免费小🍪
-header-img: "img/zhihu.jpg"
+title: 读立写生
+header-img: "img/green.jpg"
 tagline: "cn"  
-description: "小🍪的生活笔记"  
+description: "陈素封|读而立·写而生"  
 baseurl: ""
 url: "http://cnfeat"  
 
@@ -10,7 +10,7 @@ url: "http://cnfeat"
 owner: 
   name: " CnFeat"
   email: CnFeat@gmail.com
-  bio: "写不出就去吃免费饼干好了"
+  bio: "写就是写的报酬"
 
 # Data
 gavatar: http://dreamofbook.qiniudn.com/Az..png
