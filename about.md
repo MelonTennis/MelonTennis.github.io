@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "About"
+title: "🍪🍪🍪"
 description: "续命法宝小饼干"
 header-img: "img/green.jpg"
 ---
