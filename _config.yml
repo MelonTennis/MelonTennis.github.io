@@ -4,12 +4,12 @@ header-img: "img/zhihu.jpg"
 tagline: "cn"  
 description: "小🍪的生活笔记"  
 baseurl: ""
-#url: "http://freeCookie"  
+url: "http://YijiaJin.github.io"  
 
 # About/contact
 owner: 
-  name: " freeCookie"
-  email:  🍪🍪🍪
+  name: " freeCookie_免费小🍪"
+  email:  🍪
   bio: "去吃免费饼干就一切都好了～"
 
 # Data
@@ -29,7 +29,7 @@ zhihu_username:
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
-paginate: 8
+paginate: 5
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
@@ -61,3 +61,17 @@ google_verify:
 bing_verify:
 
 # Links to include in footer navigation
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "freeCookie🍪 loves Coding"
+sidebar-avatar: /img/star.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+
+
+
+# Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 0.2              # A tag will be featured if the size of it is more than this condition value
+
+
+

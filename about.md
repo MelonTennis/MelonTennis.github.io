@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Nice to meet you"
+title: "Nice to meet you🍪"
 description: "续命法宝小饼干"
 header-img: "img/green.jpg"
 ---
