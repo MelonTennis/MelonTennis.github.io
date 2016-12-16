@@ -2,7 +2,7 @@
 layout: page
 title: "Index"
 description: "Finding 🍪 in constant time"  
-header-img: "img/star.jpg"  
+header-img: "img/facebook.jpg"  
 ---
 
 ##This pages includes tags 
