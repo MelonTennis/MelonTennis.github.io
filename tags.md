@@ -1,8 +1,8 @@
 ---
 layout: page
 title: "Index"
-description: "Find sth in dictionary in O(1) time 🍪"  
-header-img: "img/semantic.jpg"  
+description: "Finding 🍪 in constant time"  
+header-img: "img/blue.jpg"  
 ---
 
 ##This pages includes tags 
