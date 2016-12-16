@@ -4,13 +4,13 @@ header-img: "img/zhihu.jpg"
 tagline: "cn"  
 description: "小🍪的生活笔记"  
 baseurl: ""
-#url: "http://freeCookie"  
+url: "http://cnfeat"  
 
 # About/contact
 owner: 
-  name: " freeCookie"
-  email:  🍪🍪🍪
-  bio: "去吃免费饼干就一切都好了～"
+  name: " CnFeat"
+  email: CnFeat@gmail.com
+  bio: "写不出就去吃免费饼干好了"
 
 # Data
 gavatar: http://dreamofbook.qiniudn.com/Az..png
@@ -43,16 +43,16 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      author: "freeCookie🍪"
+      author: "CnFeat"
       header-img: "img/green.jpg" # We don't want posts without a header image, that whould mean white on white
 
 # Comments 
-#comments :
- # provider : duoshuo
- # duoshuo :
- #   short_name : 
- # disqus :
-  #    short_name : 
+comments :
+  provider : duoshuo
+  duoshuo :
+    short_name : 
+  disqus :
+      short_name : 
 
 # Analytics and webmaster tools stuff goes here
 google_analytics: 
