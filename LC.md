@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Learning Centre🍪"
-description: "人生得意须尽欢|You are amazing"
+description: "人生得意须尽欢 | You are amazing"
 header-img: "img/twitter.jpg"
 ---
 
