@@ -78,10 +78,8 @@ featured-condition-size: 0.2              # A tag will be featured if the size o
 # Friends
 friends: [
     {
-        title: "西瓜君🍉（误）",
-        href: "https://littlenoah.github.io/",
-        title: "兔子妞🐰（大误）",
-        href: "https://yuchen9459.github.io/"  
+        title: "兔子妞🐰（大误）", "西瓜君🍉（误）",
+        href: "https://yuchen9459.github.io/", "https://littlenoah.github.io/" 
     }
 ]
 
