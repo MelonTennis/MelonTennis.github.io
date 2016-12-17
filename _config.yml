@@ -1,5 +1,5 @@
 # Site settings
-title: "freeCookie_免费小🍪"
+title: freeCookie_免费小🍪
 header-img: "img/zhihu.jpg"
 tagline: "cn"  
 description: "小🍪的生活笔记"  
@@ -9,7 +9,7 @@ url: "http://YijiaJin.github.io"
 # About/contact
 owner: 
   name: " freeCookie_免费小🍪"
-  email:  🍪
+  email:  #🍪
   bio: "去吃免费饼干就一切都好了～"
 
 # Data
@@ -18,8 +18,8 @@ favicon: img/favicon.png
 
 douban_username:  
 twitter_username: #YijiaJin
-github_username: YijiaJin
-facebook_username: 100009010019145
+github_username: #YijiaJin
+facebook_username: #100009010019145
 weibo_username: 
 zhihu_username: #yi-zhi-53
 
@@ -29,7 +29,7 @@ zhihu_username: #yi-zhi-53
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
-paginate: 5
+paginate: 8
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
