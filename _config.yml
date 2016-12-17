@@ -17,11 +17,11 @@ gavatar: http://dreamofbook.qiniudn.com/Az..png
 favicon: img/favicon.png
 
 douban_username:  
-twitter_username: 
-github_username: 
-facebook_username: 
+twitter_username: YijiaJin
+github_username: YijiaJin
+facebook_username: 100009010019145
 weibo_username: 
-zhihu_username: 
+zhihu_username: yi-zhi-53
 
 # Build settings  
 # use Github Flavored Markdown !important  
@@ -46,13 +46,13 @@ defaults:
       author: "freeCookie🍪"
       header-img: "img/star.jpg" # We don't want posts without a header image, that whould mean white on white
 
-# Comments 
-#comments :
- # provider : duoshuo
- # duoshuo :
- #   short_name : 
- # disqus :
-  #    short_name : 
+ Comments 
+comments :
+  provider : duoshuo
+  duoshuo :
+    short_name : 
+  disqus :
+      short_name : 
 
 # Analytics and webmaster tools stuff goes here
 google_analytics: 
