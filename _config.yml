@@ -9,19 +9,19 @@ url: "http://YijiaJin.github.io"
 # About/contact
 owner: 
   name: " freeCookie_免费小🍪"
-  email:  #🍪
-  bio: "去吃免费饼干就一切都好了～"
+  email: YijiaJin24@gmail.com
+  bio: "写不出就去吃免费饼干好了~"
 
 # Data
 gavatar: http://dreamofbook.qiniudn.com/Az..png
 favicon: img/favicon.png
 
 douban_username:  
-twitter_username: #YijiaJin
-github_username: #YijiaJin
-facebook_username: #100009010019145
+twitter_username: YijiaJin
+github_username: YijiaJin
+facebook_username: 100009010019145
 weibo_username: 
-zhihu_username: #yi-zhi-53
+zhihu_username: yi-zhi-53
 
 # Build settings  
 # use Github Flavored Markdown !important  
@@ -33,7 +33,7 @@ paginate: 8
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-#timezone: Asia/Shanghai
+timezone: Asia/Shanghai
 
 # Defaults for posts
 defaults:
@@ -46,7 +46,7 @@ defaults:
       author: "freeCookie🍪"
       header-img: "img/star.jpg" # We don't want posts without a header image, that whould mean white on white
 
- Comments 
+# Comments 
 comments :
   provider : duoshuo
   duoshuo :
@@ -61,9 +61,3 @@ google_verify:
 bing_verify:
 
 # Links to include in footer navigation
-#https://YijiaJin.github.io
-
-
-
-
-
