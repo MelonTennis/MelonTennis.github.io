@@ -83,9 +83,9 @@
                     {% endif %}
                 </ul>
                 <p class="copyright text-muted">
-                    Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}
+                    Copyright &copy; <a href="http://YijiaJin.github.io">{{ site.title }}</a> {{ site.time | date: '%Y' }}
                     <br>
-                    ❖ Powered by Jekyll <a href="http://YijiaJin.github.io">freeCookie🍪</a>
+                    ❖ Powered by Jekyll
                 </p>
             </div>
         </div>
@@ -98,13 +98,7 @@
                 <img src="/search/img/cb-close.png"  id="cb-close-btn"/>
             </div>
     </div>
-    
-    <div style="position: fixed; right: 16px; bottom: 20px;">
-        <img src="/search/img/favicon.png"  id="cb-search-btn"  title="双击ctrl试一下"/>
-    </div>
-    
-    <link rel="stylesheet" href="{{ "/search/css/cb-search.css" | prepend: site.baseurl }}">
-        
+
         <script src="{{ "/search/js/bootstrap3-typeahead.min.js" | prepend: site.baseurl }}"></script>
         <script src="{{ "/search/js/cb-search.js" | prepend: site.baseurl }}"></script>
 
