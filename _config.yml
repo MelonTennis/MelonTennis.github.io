@@ -61,6 +61,7 @@ google_verify:
 bing_verify:
 
 # Links to include in footer navigation
+https://YijiaJin.github.io
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
