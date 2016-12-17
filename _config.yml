@@ -48,7 +48,7 @@ defaults:
 
 # Comments 
 comments :
-  provider : duoshuo
+  provider : disque
   duoshuo :
     short_name : 
   disqus :
