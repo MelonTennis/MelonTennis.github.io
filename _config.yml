@@ -51,7 +51,7 @@ comments :
   provider : disque
   duoshuo :
     short_name : 
-  disqus :
+  disqus : disqus_freeCookie
       short_name : 
 
 # Analytics and webmaster tools stuff goes here
