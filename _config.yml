@@ -48,11 +48,11 @@ defaults:
 
 # Comments 
 comments :
-  provider : disqus
+  provider : 
   duoshuo :
     short_name : 
-  disqus : disqus_freeCookie
-      short_name : disqus_freeCookie
+  disqus : 
+      short_name : 
 
 # Analytics and webmaster tools stuff goes here
 google_analytics: 
