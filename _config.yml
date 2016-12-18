@@ -48,7 +48,7 @@ defaults:
 
 # Comments 
 comments :
-  provider : disque
+  provider : disqus
   duoshuo :
     short_name : 
   disqus : disqus_freeCookie
