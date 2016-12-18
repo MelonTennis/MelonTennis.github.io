@@ -90,7 +90,7 @@ layout: default
     <!-- Featured Tags -->
     {% if site.featured-tags %}
     <section>
-        <hr class="hidden-sm hidden-xs">
+        <hr class="hidden-sm hidden-xs  text-muted">
         <h5><a href="{{'/tags/' | prepend: site.baseurl }}">FEATURED TAGS</a></h5>
         <div class="tags">
             {% for tag in site.tags %}
@@ -105,7 +105,7 @@ layout: default
     {% endif %}
     
     <!-- Short About -->
-    <section class="visible-md visible-lg">
+    <section class="visible-md visible-lg  text-muted">
         <hr><h5><a href="{{'/about/' | prepend: site.baseurl }}">ABOUT ME</a></h5>
         <div class="short-about">
             {% if site.sidebar-avatar %}
@@ -193,7 +193,7 @@ layout: default
     {% if site.friends %}
     <hr>
     <h5>FRIENDS</h5>
-    <ul class="list-inline">
+    <ul class="list-inline  text-muted">
         {% for friend in site.friends %}
         <li><a href="{{friend.href}}">{{friend.title}}</a></li>
         {% endfor %}
