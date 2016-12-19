@@ -19,6 +19,8 @@ insert(val): Inserts an item val to the collection.
 remove(val): Removes an item val from the collection if present.
 getRandom: Returns a random element from current collection of elements. The probability of each element being returned is linearly related to the number of same value the collection contains.
 
+#### Analysis
+
 The key point is to build a map whose key is the element in the collection, and the value is a collection which includes the index of duplicate that element. Each time insert and delete one element, renew the map. Delete the current element and move the last element to that place and delete the last item. But when the item is the last one, there are some corner cases. 
 
 #### Code:
@@ -85,4 +87,4 @@ public class RandomizedCollection {
  */
 ```
 
-注意remove当前删除的元素操作一定要放在更新map操作之前。
+⚠️：remove当前删除的元素操作一定要放在更新map操作之前。
