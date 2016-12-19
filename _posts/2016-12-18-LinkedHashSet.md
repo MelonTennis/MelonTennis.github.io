@@ -4,7 +4,7 @@ title: LinkedHashSet | HashSet
 subtitle: Compare LinkedHashSet and HashSet
 date: 2016-12-18
 categories: blog
-tags: [java, hashset, linkedhashset]
+tags: [Java, Hashset, Linkedhashset]
 description: LinkedHashSet & HashSet 
 catalog: true
 ---

@@ -1,0 +1,98 @@
+---
+
+layout: post
+
+title: LC381. Insert Delete GetRandom O(1) - Duplicates allowed
+
+subtitle: Compare LinkedHashSet and HashSet
+
+date: 2016-12-18
+
+categories: blog
+
+tags: [LC, Linkedhashset, Design]
+
+description: LC.381 Array, HashSet, Design
+
+catalog: true
+
+---
+
+### Insert Delete GetRandom O(1) - Duplicates allowed
+
+#### Question
+
+Design a data structure that supports all following operations in average O(1) time with duplicate elements are allowed.
+Functions: 
+insert(val): Inserts an item val to the collection.
+remove(val): Removes an item val from the collection if present.
+getRandom: Returns a random element from current collection of elements. The probability of each element being returned is linearly related to the number of same value the collection contains.
+
+The key point is to build a map whose key is the element in the collection, and the value is a collection which includes the index of duplicate that element. Each time insert and delete one element, renew the map. Delete the current element and move the last element to that place and delete the last item. But when the item is the last one, there are some corner cases. 
+
+#### Code:
+```java
+public class RandomizedCollection {
+// use arraylist to record integers
+// use hashmap to record the index of duplicate nums: key: int, value: place of int
+// LinkedHashSet for O(1) iteration
+ArrayList<Integer> collect;
+HashMap<Integer, HashSet<Integer>> map;
+
+/** Initialize your data structure here. */
+public RandomizedCollection() {
+collect = new ArrayList<Integer>();
+map = new HashMap<Integer, HashSet<Integer>>();
+}
+
+/** Inserts a value to the collection. Returns true if the collection did not already contain the specified element. */
+public boolean insert(int val) {
+boolean contain = map.containsKey(val);
+if(!contain){
+map.put(val, new HashSet<Integer>());
+}
+map.get(val).add(collect.size());
+collect.add(val);
+return !contain;
+}
+
+/** Removes a value from the collection. Returns true if the collection contained the specified element. */
+public boolean remove(int val) {
+boolean contain = map.containsKey(val);
+if(!contain)    return false;
+HashSet<Integer> set = map.get(val);
+int index = set.iterator().next();
+// remove the remove item with the last item and renew the index map
+int lastitem = collect.get(collect.size() - 1);
+// if it is the last one, then only renew map
+set.remove(index); // must remove before
+if(index != collect.size()-1){
+HashSet<Integer> lastSet = map.get(lastitem);
+lastSet.remove(collect.size() - 1);
+lastSet.add(index);
+}
+collect.set(index, lastitem);
+collect.remove(collect.size() - 1);
+if(set.isEmpty()){
+map.remove(val);
+}
+return true;
+}
+
+/** Get a random element from the collection. */
+public int getRandom() {
+return collect.get((int)(Math.random() * collect.size()));
+}
+}
+
+/**
+* Your RandomizedCollection object will be instantiated and called as such:
+* RandomizedCollection obj = new RandomizedCollection();
+* boolean param_1 = obj.insert(val);
+* boolean param_2 = obj.remove(val);
+* int param_3 = obj.getRandom();
+*/
+
+```
+
+注意remove当前删除的元素操作一定要放在更新map操作之前。
