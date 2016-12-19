@@ -48,7 +48,7 @@ defaults:
 
 # Comments 
 comments : 
-  provider : disqus
+  provider : 
   duoshuo :
     short_name : 
   disqus : 
