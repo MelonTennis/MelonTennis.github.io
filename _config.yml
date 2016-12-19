@@ -49,7 +49,7 @@ defaults:
 
 # Comments 
 comments : 
-  provider : 
+  provider : disqus
   duoshuo :
     short_name : 
   disqus : freeCookie
