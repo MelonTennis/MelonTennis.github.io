@@ -47,8 +47,8 @@ defaults:
       header-img: "img/star.jpg" # We don't want posts without a header image, that whould mean white on white
 
 # Comments 
-comments : disqus
-  provider : 
+comments : 
+  provider : disqus
   duoshuo :
     short_name : 
   disqus : 
