@@ -52,7 +52,7 @@ comments : disqus
   duoshuo :
     short_name : 
   disqus : 
-      short_name : disqus_freeCookie
+      short_name : dreamark
 
 # Analytics and webmaster tools stuff goes here
 google_analytics: 
