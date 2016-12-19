@@ -1,7 +1,7 @@
 ---
 layout: post
-title: LC381. Insert Delete GetRandom O(1) - Duplicates allowed
-subtitle: Compare LinkedHashSet and HashSet
+title: LC381. Insert Delete GetRandom O(1) 
+subtitle: Design: Insert Delete GetRandom O(1) - Duplicates allowed
 date: 2016-12-18
 categories: blog
 tags: [LC, Linkedhashset, Design]
