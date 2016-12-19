@@ -1,8 +1,8 @@
 ---
-title: Tags
-layout: default
-description: keep hungry keep foolish
-header-img: "img/tag-bg.jpg"
+title: Tags🍪
+layout: page2
+description: 春风又绿江南岸 | Searching in O(1)
+header-img: "img/semantic.jpg"
 ---
 
 <!-- Page Header -->
