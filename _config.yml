@@ -49,6 +49,7 @@ defaults:
 
 # Disqus settings
 disqus_username: disqus_freeCookie
+disqus_short_name: dreamark
 
 # Duoshuo settings
 # duoshuo_username:  yuchen9459         # your username
