@@ -89,7 +89,7 @@ layout: default
                 {% endif %}
 
 
-                <ul class="pager">
+                <ul class="pager text-muted">
                     {% if page.previous.url %}
                     <li class="previous text-muted">
                         <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">
@@ -99,7 +99,7 @@ layout: default
                     </li>
                     {% endif %}
                     {% if page.next.url %}
-                    <li class="next text-muted">
+                    <li class="next text-muted" style = "display:inline;">
                         <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">
                         Next<br>
                         <span>{{page.next.title}}</span>
