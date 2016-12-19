@@ -46,13 +46,21 @@ defaults:
       author: "freeCookie🍪"
       header-img: "img/star.jpg" # We don't want posts without a header image, that whould mean white on white
 
+
+# Disqus settings
+disqus_username: disqus_freeCookie
+
+# Duoshuo settings
+# duoshuo_username:  yuchen9459         # your username
+# Share component is depend on Comment so we can NOT use share only.
+#duoshuo_share: true  
 # Comments 
-comments : 
-  provider : 
-  duoshuo :
-    short_name : 
-  disqus : dreamark
-      short_name : dreamark
+#comments : 
+#  provider : 
+#  duoshuo :
+#    short_name : 
+#  disqus : dreamark
+#      short_name : dreamark
 
 # Analytics and webmaster tools stuff goes here
 google_analytics: 
