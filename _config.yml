@@ -48,7 +48,7 @@ defaults:
 
 
 # Disqus settings
-disqus_username: disqus_freeCookie
+disqus_username: dreamark
 disqus_short_name: dreamark
 
 # Duoshuo settings
