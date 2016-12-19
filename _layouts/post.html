@@ -91,7 +91,7 @@ layout: default
 
                 <ul class="pager">
                     {% if page.previous.url %}
-                    <div>
+                    <div style="display:inline;">
                     <li class="previous text-muted">
                         <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">
                         Previous<br>
