@@ -16,7 +16,7 @@ catalog: true
 ### 参考
 > [HashSet, TreeSet 和 LinkedHashSet区别](http://www.cnblogs.com/Terry-greener/archive/2011/12/02/2271707.html)
 
-> [HashSet VS TreeSet VS LinkedHashSet] (http://www.programcreek.com/2013/03/hashset-vs-treeset-vs-linkedhashset/)
+> [HashSet VS TreeSet VS LinkedHashSet](http://www.programcreek.com/2013/03/hashset-vs-treeset-vs-linkedhashset/)
 
 > [java 集合](http://liuzxc.github.io/blog/java-advance-05/)
 
