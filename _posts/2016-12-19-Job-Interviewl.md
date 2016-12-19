@@ -53,6 +53,7 @@ catalog: true
 
 18. Small talk: social understanding. 
 
-   **Not**: religion, money, politics, age, marriage, appearance.
+      **Not**: religion, money, politics, age, marriage, appearance.
 
 19. Your last book/movie?
+
