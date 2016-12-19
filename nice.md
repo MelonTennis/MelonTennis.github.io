@@ -9,13 +9,15 @@ header-img: "img/green.jpg"
 
 CS是一种选择， 最起码还有免费的小🍪。
 
+诶呀没有搞过前端这个搞了好久吖。
+
 ## 🍪🍪🍪
 
 Hi, here is freeCookie_🍪‘s blog.
 
 Nice to meet you. 
 
-Learning CS is a choice, as long as there are free cookies🍪 :)
+Learning CS is a choice, as least there are free cookies🍪 :)
 
 
 
