@@ -91,15 +91,15 @@ layout: default
 
                 <ul class="pager text-muted">
                     {% if page.previous.url %}
-                    <li class="previous text-muted">
+                    <li class="previous text-muted"style = "display:inline-block;">
                         <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}" word-wrap:break-word >
                         Previous<br>
-                        <span>{{page.previous.title}}</span>
+                        <span>{{page.previous.title}} word-wrap:break-word </span>
                         </a>
                     </li>
                     {% endif %}
                     {% if page.next.url %}
-                    <li class="next text-muted" style = "display:inline;">
+                    <li class="next text-muted" style = "display:inline-block;">
                         <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}" word-wrap:break-word>
                         Next<br>
                         <span>{{page.next.title}}</span>
