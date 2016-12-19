@@ -52,7 +52,7 @@ comments :
   provider : 
   duoshuo :
     short_name : 
-  disqus : disqus_freeCookie
+  disqus : freeCookie
       short_name : https-yijiajin-github-io
 
 # Analytics and webmaster tools stuff goes here
