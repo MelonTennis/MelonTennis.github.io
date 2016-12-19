@@ -90,8 +90,8 @@ layout: default
 
 
                 <ul class="pager">
-                    {% if page.previous.url %}
                     <div style="display:inline;">
+                    {% if page.previous.url %}
                     <li class="previous text-muted">
                         <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">
                         Previous<br>
@@ -99,6 +99,7 @@ layout: default
                         </a>
                     </li>
                     {% endif %}
+                    </div>
                     {% if page.next.url %}
                     <li class="next text-muted">
                         <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">
@@ -106,8 +107,8 @@ layout: default
                         <span>{{page.next.title}}</span>
                         </a>
                     </li>
-                    </div>
                     {% endif %}
+                    </div>
                 </ul>
 
 
