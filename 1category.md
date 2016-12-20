@@ -6,12 +6,10 @@ header-img: "img/twitter.jpg"
 permalink: /category/
 ---
 
-### Content
-
-<div class="page clearfix">
-
+ <div class="page clearfix">
     <div class="right">
         <div class="wrap">
+            <li><p>Content</p></li>
             <!-- Content -->
             <div class="side-category">
                 <ul id="content-side" class="content-ul">
