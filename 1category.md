@@ -6,8 +6,10 @@ header-img: "img/twitter.jpg"
 permalink: /category/
 ---
 
+#### Content
 
 <div class="page clearfix">
+
     <div class="right">
         <div class="wrap">
             
@@ -38,7 +40,7 @@ permalink: /category/
                             {{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.
                             </time>
                             <a class="title" href="{{ post.url }}">{{ post.title }}</a>
-
+    
                             {% include category.html %}
                             {% include tag.html %}
                         </li>
@@ -48,6 +50,6 @@ permalink: /category/
             {% endfor %}
         </ul>
     </div>
-    
+
 </div>
 <script src="{{ "/js/pageContent.js " | prepend: site.baseurl }}" charset="utf-8"></script>
