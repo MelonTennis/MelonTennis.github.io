@@ -1,5 +1,5 @@
 ---
-layout: page2
+layout: page
 title: Learning Centre🍪
 description: "人生得意须尽欢 | My heart is in the work"
 header-img: "img/twitter.jpg"
@@ -8,6 +8,26 @@ permalink: /category/
 
 
 <div class="page clearfix">
+    <div class="right">
+        <div class="wrap">
+            
+            <!-- Content -->
+            <div class="side-catalog">
+                <div>
+                    Content
+                </div>
+                <ul id="content-side" class="content-ul">
+                    {% for category in site.categories%}
+                    <li>
+                        <a class="scroll" href="#{{ category | first }}">
+                            {{ category | first }} ({{ category | last | size }})
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
     <div class="left">
         <hr>
         <ul>
@@ -32,27 +52,5 @@ permalink: /category/
         </ul>
     </div>
     
-    <div class="right">
-        <div class="wrap">
-
-            <!-- Content -->
-            <div class="side content">
-                <div>
-                    Content
-                </div>
-                <ul id="content-side" class="content-ul">
-                    {% for category in site.categories%}
-                        <li>
-                            <a class="scroll" href="#{{ category | first }}">
-                                {{ category | first }} ({{ category | last | size }})
-                            </a>
-                        </li>
-                    {% endfor %}
-                </ul>
-            </div>
-            <!-- 其他div框放到这里 -->
-            <!-- <div class="side">bbbb</div> -->
-        </div>
-    </div>
 </div>
 <script src="{{ "/js/pageContent.js " | prepend: site.baseurl }}" charset="utf-8"></script>
