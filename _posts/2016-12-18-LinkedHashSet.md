@@ -3,7 +3,7 @@ layout: post
 title: LinkedHashSet | HashSet 
 subtitle: Compare LinkedHashSet and HashSet
 date: 2016-12-18
-categories: blog
+categories: Java
 tags: [Java, Hashset, Linkedhashset]
 description: LinkedHashSet & HashSet 
 catalog: true

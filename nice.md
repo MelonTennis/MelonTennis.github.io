@@ -19,7 +19,7 @@ Hi, here is freeCookie_🍪‘s blog.
 
 Nice to meet you. 
 
-Learning CS is a choice, as least there are free cookies🍪 :)
+Learning CS is a choice, at least there are free cookies🍪 :)
 
 
 
