@@ -6,7 +6,7 @@ header-img: "img/twitter.jpg"
 permalink: /category/
 ---
 
-####     Content
+###        Content
 
 <div class="page clearfix">
 
