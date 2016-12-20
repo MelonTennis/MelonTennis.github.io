@@ -3,7 +3,7 @@ layout: post
 title: Job Interview for International Applications  
 subtitle: Some suggestions for job interview
 date: 2016-12-19
-categories: blog
+categories: Blog
 tags: [ICC]
 description: ICC Job interview suggestions
 catalog: true
@@ -53,7 +53,7 @@ catalog: true
 
 18. Small talk: social understanding. 
 
-     **Not**: religion, money, politics, age, marriage, appearance.
+    **Not**: religion, money, politics, age, marriage, appearance.
 
 19. Your last book/movie?
 
