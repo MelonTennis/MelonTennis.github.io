@@ -82,11 +82,11 @@ featured-condition-size: 0.2              # A tag will be featured if the size o
 # Friends
 friends: [
     {
-        title: "兔子🐰",
+        title: "活的滋润的兔子🐰",
         href: "https://yuchen9459.github.io/"
     },
     {
-        title: "西瓜🍉",
+        title: "生不如🐶的西瓜🍉",
         href: "https://littlenoah.github.io/"
     }
 ]
