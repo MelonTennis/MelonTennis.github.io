@@ -5,7 +5,7 @@ subtitle: 线段树和树状数组
 date: 2016-12-21
 tags: [Segment Tree, BIT]
 description: 线段树和树状数组
-categories: Data Structure 
+categories: DataStructure 
 catalog: true
 ---
 
