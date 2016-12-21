@@ -3,7 +3,7 @@ layout: post
 title: Segment Tree || Binarty Index Tree
 subtitle: 线段树和树状数组
 date: 2016-12-21
-tags: [Segment Tree, BIT]
+tags: [SegmentTree, BIT]
 description: 线段树和树状数组
 categories: DataStructure 
 catalog: true
@@ -71,3 +71,8 @@ int sum(int idx){
 >
 > 简而言之，BIT更加灵活，需要的空间较少，适合单个元素或者连需求和情况。修改区间则效率较低。
 
+负数的二进制表示：[wiki](https://en.wikipedia.org/wiki/Two's_complement)
+
+2‘ complement: 1's complement + 1 补码
+
+1's complement: 反码
