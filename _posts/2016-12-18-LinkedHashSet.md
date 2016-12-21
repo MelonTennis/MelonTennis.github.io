@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LinkedHashSet | HashSet 
+title: LinkedHashSet || HashSet 
 subtitle: Compare LinkedHashSet and HashSet
 date: 2016-12-18
 tags: [Java, Hashset, Linkedhashset]
