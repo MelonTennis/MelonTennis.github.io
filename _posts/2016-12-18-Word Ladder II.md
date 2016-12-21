@@ -4,7 +4,7 @@ title: LC216. Word Ladder II
 subtitle: 
 date: 2016-12-18
 categories: Leetcode
-tags: [LC, BFS, Array, DFS, Hashmap]
+tags: [BFS, Array, DFS, Hashmap]
 description: LC.126, BFS, DFS, Hashmap
 catalog: true
 

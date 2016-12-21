@@ -4,7 +4,7 @@ title: LC127. Word Ladder
 subtitle: Word Ladder I - one of solution
 date: 2016-12-20
 categories: Leetcode
-tags: [LC, BFS]
+tags: [BFS]
 description: LC.127 Word Ladder I - BFS
 catalog: true
 
