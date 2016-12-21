@@ -14,8 +14,11 @@ catalog: true
 Definition:
 
 > Database - contains many tables
+>
 > • Relation (or table) - contains tuples and attributes
+>
 > • Tuple (or row) - a set of fields that generally represents an “object” like a person or a music track
+>
 > • Attribute (also column or field) - one of possibly many elements of data corresponding to the object represented by the row
 
 **Relation(Table)**:
@@ -37,34 +40,34 @@ Some Examples:
 
 Creat/ Insert/ Delete/ Retrive/ Sort/ Count selected numbers
 
-```sql lite
+```sql
 CREATE TABLE Users(
 	name VARCHAR(128),
   	email VARCHAR(128)
 )
 ```
 
-```sql lite
+```sql
 INSERT INTO Usesrs(name, email)VALUES('name','email@sth.com')
 ```
 
-```sql lite
+```sql
 DELETE FROM Users WHERE email = 'email@sth.com'
 ```
 
-```sql lite
+```sql
 UPDATE USers SET name = 'newname' WHERE email = 'email@sth.com'
 ```
 
-```sql lite
+```sql
 SELECT*FROM Users WHERE email = 'email@sth.com'
 ```
 
-```sql lite
+```sql
 SELECT*FROM Users ORDER BY name(email)
 ```
 
-```sql lite
+```sql
 SELECT COUNT(*) FROM Users
 ```
 
