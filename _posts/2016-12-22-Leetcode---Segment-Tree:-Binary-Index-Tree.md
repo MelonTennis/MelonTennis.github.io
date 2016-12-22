@@ -54,7 +54,7 @@ Binary search tree: O(nlgn) 10 ms
 
 ~~这个是面试官推荐的解法呢 👇~~
 
-[Discuss](https://discuss.leetcode.com/topic/31405/9ms-short-java-bst-solution-get-answer-when-building-bst)
+>  [Discuss](https://discuss.leetcode.com/topic/31405/9ms-short-java-bst-solution-get-answer-when-building-bst)
 
 When building the BST, maintain a record of the total number on it's left (smaller numbers), and duplicate numbers. When insertign new numbers, the answer should be the add of that two number of all nodes that turns right(not the number of itself). 
 
@@ -104,7 +104,7 @@ public class Solution {
 
 Binary Index tree: O(lg(maxValue)) O(maxValue)
 
-[discuss](https://discuss.leetcode.com/topic/39656/short-java-binary-index-tree-beat-97-33-with-detailed-explanation/12)
+>  [discuss](https://discuss.leetcode.com/topic/39656/short-java-binary-index-tree-beat-97-33-with-detailed-explanation/12)
 
 完全想不出的解法QAQ 将所有的num阈值构造成BIT，利用BIT的结构特性对存在的节点进行计数。~~他们怎么什么都会🙄~~
 
@@ -229,7 +229,7 @@ public void makeBIT(int pos, int val) {
 
 Time for sum and update: O(lgn)
 
-Segment  Tree 入门题，参考[discuss](https://discuss.leetcode.com/topic/29918/17-ms-java-solution-with-segment-tree)
+>  Segment  Tree 入门题，参考[discuss](https://discuss.leetcode.com/topic/29918/17-ms-java-solution-with-segment-tree)
 
 ```java
 public class NumArray {
