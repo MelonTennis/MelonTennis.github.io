@@ -76,3 +76,7 @@ int sum(int idx){
 2‘ complement: 1's complement + 1 补码
 
 1's complement: 反码
+
+
+
+PS. LC segment tree 和 BIT 分类，题目是一样的 :)

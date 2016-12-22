@@ -73,3 +73,4 @@ On: joint conditions
 
 [umich slides](https://www.dr-chuck.net/pythonlearn/slides/EN_us/Py4Inf-14-Databases.pdf)
 
+Assessments 还是很简单基本随便写写。。。
