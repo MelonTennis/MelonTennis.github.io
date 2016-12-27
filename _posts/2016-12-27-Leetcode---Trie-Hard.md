@@ -309,9 +309,10 @@ Explanation: "catsdogcats" can be concatenated by "cats", "dog" and "cats";
            return false;
        } // helper
    }
+
    ```
 
-   2. Trie ~~难以置信的写了3天交了十几个答案🙄~~
+2. Trie ~~难以置信的写了3天交了十几个答案🙄~~
 
    首先构造Trie，经典的写法。再对每个word由root开始进行搜索。搜索的过程中记录已经找到的word数目。如果找到了某个单词，就从下一个char开始查找，substring包含>=2个单词就加入结果中。
 

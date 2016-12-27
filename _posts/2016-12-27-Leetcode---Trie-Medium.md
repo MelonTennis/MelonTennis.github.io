@@ -101,35 +101,35 @@ Analysis:
 
 要求O(n), naive的做法是O(n^2).  ai < 2^31，一定在暗示位运算。
 
-* Bit manipulation
+1. Bit manipulation
 
-想法是算出每一位的结果最后得到最终的结果，O(32n). 对于i属于 [0, 32)从左到右的每一位，首先找到每个num的i个前缀bit，首先假设max = 0，对于所有的前缀求出最大的可能性并保存到max中不断更新。
+   想法是算出每一位的结果最后得到最终的结果，O(32n). 对于i属于 [0, 32)从左到右的每一位，首先找到每个num的i个前缀bit，首先假设max = 0，对于所有的前缀求出最大的可能性并保存到max中不断更新。
 
-```java
-public class Solution {
-    public int findMaximumXOR(int[] nums) {
-        int max = 0, mask = 0;
-        for(int i = 31; i >= 0; i--){
-            mask |= (1<<i);
-            HashSet<Integer> set = new HashSet<Integer>();
-            for(int num: nums){
-                set.add(num&mask);
-            }
-            int temp = max | (1<<i);
-            for(int prefix:set){
-                if(set.contains(temp ^ prefix)){
-                    max = temp;
-                }
-            }
-        }
-        return max;
-    }
-}
-```
+   ```java
+   public class Solution {
+       public int findMaximumXOR(int[] nums) {
+           int max = 0, mask = 0;
+           for(int i = 31; i >= 0; i--){
+               mask |= (1<<i);
+               HashSet<Integer> set = new HashSet<Integer>();
+               for(int num: nums){
+                   set.add(num&mask);
+               }
+               int temp = max | (1<<i);
+               for(int prefix:set){
+                   if(set.contains(temp ^ prefix)){
+                       max = temp;
+                   }
+               }
+           }
+           return max;
+       }
+   }
+   ```
 
-* Trie
+2. Trie 
 
-说好的前缀树tag呢 -> 将每个num加入二进制形式的trie，寻找最大的异或值，即对于每个num的反码是否存在。这个写法由于是O(60n)而139ms。还是discuss厉害。
+   说好的前缀树tag呢 -> 将每个num加入二进制形式的trie，寻找最大的异或值，即对于每个num的反码是否存在。这个写法由于是O(60n)而139ms。还是discuss厉害。
 
 > [Discuss: Trie, O(30n)](https://discuss.leetcode.com/topic/64753/31ms-o-n-java-solution-using-trie/2)
 
@@ -189,7 +189,6 @@ Design a data structure that supports the following two operations:
 ```
 void addWord(word)
 bool search(word)
-
 ```
 
 search(word) can search a literal word or a regular expression string containing only letters `a-z` or `.`. A `.` means it can represent any one letter.
