@@ -101,7 +101,7 @@ Analysis:
 
 要求O(n), naive的做法是O(n^2).  ai < 2^31，一定在暗示位运算。
 
-1. Bit manipulation
+* Bit manipulation
 
 想法是算出每一位的结果最后得到最终的结果，O(32n). 对于i属于 [0, 32)从左到右的每一位，首先找到每个num的i个前缀bit，首先假设max = 0，对于所有的前缀求出最大的可能性并保存到max中不断更新。
 
@@ -127,7 +127,7 @@ public class Solution {
 }
 ```
 
-2. Trie
+* Trie
 
 说好的前缀树tag呢 -> 将每个num加入二进制形式的trie，寻找最大的异或值，即对于每个num的反码是否存在。这个写法由于是O(60n)而139ms。还是discuss厉害。
 
