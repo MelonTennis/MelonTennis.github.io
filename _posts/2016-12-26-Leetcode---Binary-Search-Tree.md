@@ -269,7 +269,7 @@ Analysis:
 
 我在认真的想能不能把merge interval的代码扒过来的事情。。。后来看了[discuss](https://leetcode.com/problems/data-stream-as-disjoint-intervals/)，看到TreeMap就像看到了新大陆~~果然忘记了三个月前做的TreeSet~~
 
-TreeSet和TreeMap由于具有二叉树的结构，还记录上下边界对于intervals的题目很好用。对于存在的intervals和新加入的num情况分别讨论更新即可。
+TreeSet和TreeMap由于具有二叉树的结构，记录上下边界对于intervals的题目很好用。对于存在的intervals和新加入的num情况分别讨论更新即可。
 
 ```java
 /**

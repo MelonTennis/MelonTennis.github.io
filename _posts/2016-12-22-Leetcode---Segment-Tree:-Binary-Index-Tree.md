@@ -296,7 +296,148 @@ public class NumArray {
 
 ### LC308. Range Sum Query 2D - Mutable
 
-25号之后写好了
+Given a 2D matrix *matrix*, find the sum of the elements inside the rectangle defined by its upper left corner (*row*1, *col*1) and lower right corner (*row*2, *col*2).
+
+**Example:**
+
+```
+Given matrix = [
+  [3, 0, 1, 4, 2],
+  [5, 6, 3, 2, 1],
+  [1, 2, 0, 1, 5],
+  [4, 1, 0, 1, 7],
+  [1, 0, 3, 0, 5]
+]
+
+sumRegion(2, 1, 4, 3) -> 8
+update(3, 2, 2)
+sumRegion(2, 1, 4, 3) -> 10
+```
+
+1. 不用BIT 256ms：对于每个位置计算左下到当前点的和，然后进行减法计算。~~我真的naive, 视tag若无物~~
+
+```java
+public class NumMatrix {
+    int[][] board;
+    int r;
+    int c;
+    public NumMatrix(int[][] matrix) {
+        if (matrix.length == 0 || matrix[0].length == 0) return;
+        r = matrix.length;
+        c = matrix[0].length;
+        board = new int[r][c];
+        board[0][0] = matrix[0][0];
+        for(int i = 1; i < r; i++){
+            board[i][0] = board[i-1][0] + matrix[i][0];
+        }
+        for(int j = 1; j < c; j++){
+            board[0][j] = board[0][j-1] + matrix[0][j];
+        }
+        for(int i = 1; i < r; i++){
+            for(int j = 1; j < c; j++){
+                board[i][j] = -board[i-1][j-1] + matrix[i][j] + board[i-1][j] + board[i][j-1];
+            }
+        }
+    }
+
+    public void update(int row, int col, int val) {
+        if(r == 0 || c == 0){
+            return;
+        }
+        int ori = 0;
+        if(row == 0 && col == 0)    ori = board[0][0];
+        else if(row == 0 && col != 0)   ori = board[row][col] - board[row][col-1];
+        else if(row != 0 && col == 0)   ori = board[row][col] - board[row-1][col];
+        else    ori = board[row][col] + board[row-1][col-1] - board[row-1][col] - board[row][col-1];
+        int dif = val - ori;
+        for(int i = row; i < r; i += 1){
+            for(int j = col; j < c; j += 1){
+                board[i][j] += dif;
+            }
+        }
+    }
+
+    public int sumRegion(int row1, int col1, int row2, int col2) {
+        if(c == 0 || r == 0)    return 0;
+        int res = 0;
+        if(row1 == 0 && col1 == 0)  res = board[row2][col2];
+        else if(row1 == 0 && col1 != 0) res = board[row2][col2] - board[row2][col1-1];
+        else if(row1 != 0 && col1 == 0) res = board[row2][col2] - board[row1-1][col2];
+        else    res = board[row2][col2] + board[row1-1][col1-1] - board[row1-1][col2] - board[row2][col1-1];
+        return res;
+    }
+}
+
+
+// Your NumMatrix object will be instantiated and called as such:
+// NumMatrix numMatrix = new NumMatrix(matrix);
+// numMatrix.sumRegion(0, 1, 2, 3);
+// numMatrix.update(1, 1, 10);
+// numMatrix.sumRegion(1, 2, 3, 4);
+```
+
+O(n), O(n)
+
+2. 2D BIT,  正如许多[discuss](https://discuss.leetcode.com/topic/30343/java-2d-binary-indexed-tree-solution-clean-and-short-17ms/16)说的那样，非常理想的做法，20s。道理和上面差不多，也是sum之差的计算。
+
+```java
+public class NumMatrix {
+    int[][] board;
+    int[][] num;
+    int r;
+    int c;
+    public NumMatrix(int[][] matrix) {
+        if (matrix.length == 0 || matrix[0].length == 0) return;
+        r = matrix.length;
+        c = matrix[0].length;
+        board = new int[r+1][c+1];
+        num = new int[r][c];
+        for(int i = 0; i < r; i++){
+            for(int j = 0; j < c; j++){
+                update(i, j, matrix[i][j]);
+            }
+        }
+        
+    }
+
+    public void update(int row, int col, int val) {
+        if(r == 0 || c == 0){
+            return;
+        }
+        int dif = val - num[row][col];
+        num[row][col] = val;
+        for(int i = row+1; i <= r; i += i&(-i)){
+            for(int j = col+1; j <= c; j += j&(-j)){
+                board[i][j] += dif;
+            }
+        }
+    }
+
+    public int sumRegion(int row1, int col1, int row2, int col2) {
+        if(c == 0 || r == 0)    return 0;
+        return sum(row2+1, col2+1)+sum(row1, col1)-sum(row1, col2+1)-sum(row2+1, col1);
+    }
+    
+      public int sum(int row, int col) {
+        int sum = 0;
+        for (int i = row; i > 0; i -= i & (-i)) {
+            for (int j = col; j > 0; j -= j & (-j)) {
+                sum += board[i][j];
+            }
+        }
+        return sum;
+    }
+}
+
+
+// Your NumMatrix object will be instantiated and called as such:
+// NumMatrix numMatrix = new NumMatrix(matrix);
+// numMatrix.sumRegion(0, 1, 2, 3);
+// numMatrix.update(1, 1, 10);
+// numMatrix.sumRegion(1, 2, 3, 4);
+```
+
+O(lgn)的更新与求和
 
 ### LC218 Skyline Problem
 
