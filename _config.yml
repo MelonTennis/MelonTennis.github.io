@@ -1,5 +1,5 @@
  # Site settings
-title: freeCookie_免费小🍪
+title: freeCookie🍪
 header-img: "img/zhihu.jpg"
 tagline: "cn"  
 description: "小🍪的生活笔记"  
@@ -68,7 +68,7 @@ bing_verify:
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "freeCookie_🍪"
+sidebar-about-description: "💙❤️💛💙💚❤️"
 sidebar-avatar: /img/favicon.png      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
