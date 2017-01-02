@@ -68,7 +68,7 @@ bing_verify:
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "💙❤️💛💙💚❤️"
+sidebar-about-description: "❤️💛Lifelong Learner💚💙"
 sidebar-avatar: /img/favicon.png      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
