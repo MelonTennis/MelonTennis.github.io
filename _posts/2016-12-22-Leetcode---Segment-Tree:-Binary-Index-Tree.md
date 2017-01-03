@@ -14,7 +14,7 @@ Given an array nums[i], count the number of integers to the right of nums[i] and
 
 ~~这题我面试遇到了，把smaller改成larger，也是一样的呢~~
 
-Naive BinarySearch: O(nlogn) 55s
+##### Naive BinarySearch solution: O(nlogn) 55s
 
 For each n in the ***nums***, binary search its index, from the **end** of ***nums*** to the **start**, and copy the result into another list. 
 
@@ -50,7 +50,7 @@ public class Solution {
 }
 ```
 
-Binary search tree: O(nlgn) 10 ms
+##### Binary search tree solution: O(nlgn) 10 ms
 
 ~~这个是面试官推荐的解法呢 👇~~
 
@@ -102,7 +102,7 @@ public class Solution {
 }
 ```
 
-Binary Index tree: O(lg(maxValue)) O(maxValue)
+##### Binary Index tree solution: O(lg(maxValue)) O(maxValue)
 
 >  [discuss](https://discuss.leetcode.com/topic/31154/complicated-segmentree-solution-hope-to-find-a-better-one/2)
 
@@ -314,7 +314,9 @@ update(3, 2, 2)
 sumRegion(2, 1, 4, 3) -> 10
 ```
 
-1. 不用BIT 256ms：对于每个位置计算左下到当前点的和，然后进行减法计算。~~我真的naive, 视tag若无物~~
+##### Naive solution:
+
+不用BIT 256ms：对于每个位置计算左下到当前点的和，然后进行减法计算。~~我真的naive, 视tag若无物~~
 
 ```java
 public class NumMatrix {
@@ -378,7 +380,9 @@ public class NumMatrix {
 
 O(n), O(n)
 
-2. 2D BIT,  正如许多[discuss](https://discuss.leetcode.com/topic/30343/java-2d-binary-indexed-tree-solution-clean-and-short-17ms/16)说的那样，非常理想的做法，20s。道理和上面差不多，也是sum之差的计算。
+##### 2D BIT solution:
+
+2D BIT,  正如许多[discuss](https://discuss.leetcode.com/topic/30343/java-2d-binary-indexed-tree-solution-clean-and-short-17ms/16)说的那样，非常理想的做法，20s。道理和上面差不多，也是sum之差的计算。
 
 ```java
 public class NumMatrix {
