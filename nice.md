@@ -24,7 +24,7 @@ Learning CS is a choice, at least there are free cookies🍪 :)
 
 
 <center>
-    <p><img src="https://www.livebuzz.co.uk/images/cookies.jpg" align="center"></p>
+    <p><img src=""></p>
 </center>
 
 
