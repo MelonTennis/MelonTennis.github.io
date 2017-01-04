@@ -21,6 +21,12 @@ Nice to meet you.
 
 Learning CS is a choice, at least there are free cookies🍪 :)
 
+### 🍪🍪🍪
+
+感觉有点简陋，所谓大道至简~~(懒)~~ 大概就是如此 :D
+
+不失本心~~(有饼干吃)~~ 就好 :D
+
 
 
 <center>
