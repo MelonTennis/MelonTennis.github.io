@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LC - LRU／LFU Cache
+title: LC - LRU/LFU Cache
 subtitle: LC146, LC460
 date: 2017-01-03
 categories: Leetcode
