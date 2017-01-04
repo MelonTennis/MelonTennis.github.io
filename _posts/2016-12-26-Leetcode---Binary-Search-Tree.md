@@ -59,7 +59,7 @@ You are given an integer array *nums* and you have to return a new *counts* 
 
 在构造Binary Search Tree的时候同时维护当前节点的duplicate数量（dup）和当前节点左下方的所以节点数量（sum）。这样每当插入一个比较大的树，我们需要的count值就是在插入这个节点时所有向右的节点的dup+sum和。~~他们怎么那么聪明😳~~ 
 
-> [Discuss BST solution])(https://discuss.leetcode.com/topic/31405/9ms-short-java-bst-solution-get-answer-when-building-bst)
+> [Discuss BST solution](https://discuss.leetcode.com/topic/31405/9ms-short-java-bst-solution-get-answer-when-building-bst)
 
 ```java
 public class Solution {
@@ -115,9 +115,11 @@ Given an integer array `nums`, return the number of range sums that lie in `[l
 
 Analysis: ~~Hard题做一天也是很正常的吧😂~~
 
-1. Segment Tree解法，总觉得区间和问题应该用segment tree能做，但是一直不能AC最后还是~~扒~~参考了[discuss](https://discuss.leetcode.com/topic/33734/java-segmenttree-solution-36ms/4)才AC。
+##### Segment Tree solution:
 
-   题目求***lower <= sum(i,  j)  <= upper***, 即构造sum数列，其中sum[i] = sum(nums[0]~nums[i])，所求转化为***lower + sum[i] <= sum[j] <= upper+sum[i]***. 线段树将一个数列按照二叉树的结构分成一些单元区间，对于每个区间存在上线边界，利用此边界比较大小可以得到在此区间的元素个数。利用这个特性，首先求出对于***nums***所有元素存在的不同区间和构造成线段树，其中每个Node记录了排序好的每个区间和的左右index，sum初始化为0。然后从index0扫描***nums***，对于每个sum[i]，要统计的是线段树中满足lower <= sum[i] - sum[k]  <= upper的元素k数量，即**sum[k] <= -lower + sum[j] && sum[i] >= sum[j] -upper** (i >= k)。对于***i***，将index <= i的区间和sum加入线段树中进行更新，统计个数。最后得到结果。 ~~好难理解🙄关爱傻子的眼神看着自己~~
+Segment Tree解法，总觉得区间和问题应该用segment tree能做，但是一直不能AC最后还是参考了[discuss](https://discuss.leetcode.com/topic/33734/java-segmenttree-solution-36ms/4)才AC。
+
+题目求***lower <= sum(i,  j)  <= upper***, 即构造sum数列，其中sum[i] = sum(nums[0]~nums[i])，所求转化为***lower + sum[i] <= sum[j] <= upper+sum[i]***. 线段树将一个数列按照二叉树的结构分成一些单元区间，对于每个区间存在上线边界，利用此边界比较大小可以得到在此区间的元素个数。利用这个特性，首先求出对于***nums***所有元素存在的不同区间和构造成线段树，其中每个Node记录了排序好的每个区间和的左右index，sum初始化为0。然后从index0扫描***nums***，对于每个sum[i]，要统计的是线段树中满足lower <= sum[i] - sum[k]  <= upper的元素k数量，即**sum[k] <= -lower + sum[j] && sum[i] >= sum[j] -upper** (i >= k)。对于***i***，将index <= i的区间和sum加入线段树中进行更新，统计个数。最后得到结果。 ~~好难理解🙄关爱傻子的眼神看着自己~~
 
 ```java
 public class Solution {
@@ -204,16 +206,16 @@ public class Solution {
 
 O(nlgn), 时间不是最佳(40ms)但是这种思路还是很棒的。
 
-2. MergeSort solution 
+##### MergeSort solution 
 
-   这是~~up主~~题主[低卡百事大神的解法](https://discuss.leetcode.com/topic/33738/share-my-solution),  我觉得我应该祈祷不要遇到这种题。。。
+这是~~up主~~题主[低卡百事大神的解法](https://discuss.leetcode.com/topic/33738/share-my-solution),  我觉得我应该祈祷不要遇到这种题。。。
 
-   同样的对于***i***, 求***j - k***, 其中
+同样的对于***i***, 求***j - k***, 其中
 
-   - `j` is the first index satisfy `sums[j] - sums[i] > upper` and
-   - `k` is the first index satisfy `sums[k] - sums[i] >= lower`.
+- `j` is the first index satisfy `sums[j] - sums[i] > upper` and
+- `k` is the first index satisfy `sums[k] - sums[i] >= lower`.
 
-   利用归并排序的思路进行计数，用long以防止int的溢出。
+利用归并排序的思路进行计数，用long以防止int的溢出。
 
 ```java
 public class Solution {
