@@ -8,7 +8,7 @@ description: LinkedHashSet & HashSet
 categories: Java  
 catalog: true
 ---
-### HashSet 和 LinkedHashSet 
+### HashSet 和 LinkedHashSet
 
 第一次接触到LinkedHashSet, LC381.Insert Delete GetRandom O(1) - Duplicates allowed
 如果用LinkedHashSet 150ms， 用HashSet就要 200ms... 
