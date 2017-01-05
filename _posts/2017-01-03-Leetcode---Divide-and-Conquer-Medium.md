@@ -19,6 +19,8 @@ Find the contiguous subarray within an array (containing at least one number) wh
 For example, given the array `[-2,1,-3,4,-1,2,1,-5,4]`,
 the contiguous subarray `[4,-1,2,1]` has the largest sum = `6`.
 
+##### DP solution：
+
 这个题，当时做的时候用DP来做，实在是很基础的DP题目。DP[i]代表i为结尾的最大的子列和。O(n), O(n). 可以把空间减少到O(1).
 
 ```java
@@ -38,7 +40,7 @@ public class Solution {
 }
 ```
 
-**D&C solution:**
+##### D&C solution:
 
 > [D&C solution](https://discuss.leetcode.com/topic/426/how-to-solve-maximum-subarray-by-using-the-divide-and-conquer-approach/2)
 
@@ -85,7 +87,7 @@ Write an efficient algorithm that searches for a value in an *m* x *n* matri
 
 搜索一个矩阵是否含有某个数字，这个矩阵还是左上到右下递增排序的，那就2D Binary Search就好了吖。 
 
-**Binary Search Solution:** 
+##### Binary Search Solution:
 
 O(m + n)
 
@@ -112,7 +114,7 @@ public class Solution {
 }
 ```
 
-**D&C solution:**
+##### D&C solution:
 
 > [D&C solution](https://discuss.leetcode.com/topic/33240/java-an-easy-to-understand-divide-and-conquer-method)
 
@@ -227,7 +229,7 @@ class Solution(object):
 
 > [Solution explained](https://discuss.leetcode.com/topic/14597/solution-explained)
 
-**PriorityOueue：**
+##### PriorityOueue：
 
 优先队列，一直维护一个k大小的队列。O(nlgk), O(k)
 
@@ -245,7 +247,7 @@ public int findKthLargest(int[] nums, int k) {
 }
 ```
 
-**Quick Select(D&C) : **
+##### Quick Select(D&C) : 
 
 快速选择，利用分治法，跟快排的思路相似。选取枢纽值，将小于此值的放在左边，大于的放在右边, 最后返回的是枢纽所在的index。如果分界点的下标是length-k就是我们要找的，如果大于length - k就搜索左边，否则搜索右边。
 
