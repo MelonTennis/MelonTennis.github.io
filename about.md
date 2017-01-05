@@ -2,7 +2,7 @@
 layout: page
 title: "Nice to meet you🍪"
 description: "续命法宝小饼干 | You are amazing"
-header-img: "img/greencloud.jpg"
+header-img: "img/flower.jpg"
 ---
 
 小饼干是转CS的非典型性码农。
