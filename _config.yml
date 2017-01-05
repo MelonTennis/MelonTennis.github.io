@@ -55,7 +55,7 @@ disqus_username: https-yijiajin-github-io
 # Duoshuo settings
 duoshuo_username:           # your username
 # Share component is depend on Comment so we can NOT use share only.
-duoshuo_share: true                     # set to false if you want to use Comment without Sharing
+duoshuo_share:                      # set to false if you want to use Comment without Sharing
 
 
 
