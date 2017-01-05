@@ -2,7 +2,7 @@
 layout: page
 title: "Nice to meet you🍪"
 description: "续命法宝小饼干 | You are amazing"
-header-img: "img/green.jpg"
+header-img: "img/flower.jpg"
 ---
 
 小饼干是转CS的非典型性码农。
@@ -13,7 +13,7 @@ CS是一种选择， 最起码还有免费的小🍪。
 
 改网页有毒QAQ...
 
-## 🍪🍪🍪
+### 🍪🍪🍪
 
 Hi, here is freeCookie_🍪‘s blog.
 
@@ -27,7 +27,7 @@ Learning CS is a choice, at least there are free cookies🍪 :)
 
 不失本心~~(有饼干吃)~~ 就好 :D
 
-Coders什么的，想到大家都很有爱的分享代码:D 莫名开心🍥
+最喜欢看技术博客啦🍥 分享技术最有爱🎾
 
 
 
