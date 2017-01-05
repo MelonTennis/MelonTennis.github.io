@@ -11,9 +11,9 @@ header-img: "img/semantic.jpg"
 <div class="container">
 <div class="row">
 
-<div class="col-lg-7 col-lg-offset-0 col-md-10 col-md-offset-1">
+<div class="col-lg-8 col-lg-offset-0 col-md-10 col-md-offset-1">
   <!-- 标签云 -->
-  	<div id='tag_cloud' class="tags" style="color:#6495ED size = 5">
+  	<div id='tag_cloud' class="tags" style="color:#6495ED size = 7">
 
   		{% for tag in site.tags %}
 
