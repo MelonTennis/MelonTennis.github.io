@@ -25,11 +25,11 @@ Database Normalization:
 
 Three kinds of Keys:
 
-> * Primary key - generally an integer autoincrement field-> Never use your logical key as the primary key.
+> * Primary key (主键) - generally an integer autoincrement field-> Never use your logical key as the primary key.
 >
 >
-> * Logical key - What the outside world uses for lookup
-> * Foreign key - generally an integer key pointing to a row in another table -> when a table has column that contains a key which points to the primary key of another table.
+> * Logical key (逻辑键)- What the outside world uses for lookup
+> * Foreign key (外键) - generally an integer key pointing to a row in another table -> when a table has column that contains a key which points to the primary key of another table.
 
 Relationship Building:
 
