@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 遇到Java/Python/C++/C 类问题我该怎么回答？
+title: 遇到一个Java/Python/C++/C 类问题_(:з」∠)_
 subtitle: 搞技术的总是要不断学习
 date: 2017-01-05
 categories: Language
