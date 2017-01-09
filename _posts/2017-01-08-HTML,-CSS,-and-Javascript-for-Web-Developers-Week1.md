@@ -33,9 +33,7 @@ Javascript -> Behavior.
 
 #### Anatomy(结构) of an HTML tag
 
-* Tag
-
-\<opening tag\> content \<closing tag\>
+* Tag:  \<opening tag\> content \<closing tag\>
 
 ```html
 <p>Content</p>
@@ -311,3 +309,16 @@ Image: inline elements
 
 Notice: always using width and height to save space for image.
 
+几个不错的参考网站
+
+[Jsfiddle.net](https://jsfiddle.net/)
+
+[CSS - Tricks](https://css-tricks.com/)
+
+[codepen](http://codepen.io/)
+
+[W3School](http://www.w3schools.com/)
+
+[Can I Use](http://caniuse.com/)
+
+[W3C -html](https://www.w3.org/TR/html5/dom.html)
