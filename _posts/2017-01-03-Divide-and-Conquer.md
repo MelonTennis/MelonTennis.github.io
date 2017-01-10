@@ -50,4 +50,6 @@ catalog: true
 
 ##### 运行时间
 
-![Screen Shot 2017-01-10 at 11.06.17 AM](/Users/yijia/Documents/YijiaJin.github.io/plot/Screen Shot 2017-01-10 at 11.06.17 AM.png)![Screen Shot 2017-01-10 at 11.06.26 AM](/Users/yijia/Documents/YijiaJin.github.io/plot/Screen Shot 2017-01-10 at 11.06.26 AM.png)
+![](/plot/plot1.png)
+
+![](/plot/plot2.png)
