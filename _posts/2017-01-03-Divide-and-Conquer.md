@@ -35,8 +35,15 @@ catalog: true
 ##### 实现：
 
 * Recursion 递归
+
+  Recursive case 递归情况／ Base case 基本情况
+
+  三种求递归式的解法：代入／递归树／主方法
+
 * Stack／queue/ PriorityQueue
+
 * Base cases
+
 * Sharing repeated subproblems
 
 ~~LC上分治法的题，真是各有各的难度(笑)~~

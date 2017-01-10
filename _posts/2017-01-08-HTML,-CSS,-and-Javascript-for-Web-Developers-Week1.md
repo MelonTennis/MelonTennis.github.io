@@ -5,7 +5,6 @@ subtitle: Basics and environment setup.
 date: 2017-01-08
 categories: Coursera
 tags: [Web]
-description: Week3, Database design
 catalog: true
 ---
 
