@@ -16,7 +16,7 @@ catalog: true
 
 ##### 概念：
 
-分治法，将一个较难处理的问题分成一系列子问题，分别解决这些子问题，直到子问题可以简单的求解。原问题的解可以认为是子问题解的合并。一般而言这些子问题是没有交集的并且具有最优子结构的性质。
+分治法，将一个较难处理的问题分成一系列子问题，分别解决这些子问题，直到子问题可以简单的求解。原问题的解可以认为是子问题解的合并。一般而言这些子问题是**没有交集**的并且具有**最优子结构**的性质。
 
 > 分治法的三个步骤是：
 >
@@ -47,3 +47,7 @@ catalog: true
 * Sharing repeated subproblems
 
 ~~LC上分治法的题，真是各有各的难度(笑)~~
+
+##### 运行时间
+
+![Screen Shot 2017-01-10 at 11.06.17 AM](/Users/yijia/Documents/YijiaJin.github.io/plot/Screen Shot 2017-01-10 at 11.06.17 AM.png)![Screen Shot 2017-01-10 at 11.06.26 AM](/Users/yijia/Documents/YijiaJin.github.io/plot/Screen Shot 2017-01-10 at 11.06.26 AM.png)
