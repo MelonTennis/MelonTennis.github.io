@@ -2,7 +2,7 @@
 layout: post
 title: Leetcode - Permutation problems
 subtitle: LC31, LC46, LC47, LC60, LC266, LC267
-date: 2017-01-11
+date: 2017-01-10
 categories: Leetcode
 tags: [Backtracking]
 catalog: true
