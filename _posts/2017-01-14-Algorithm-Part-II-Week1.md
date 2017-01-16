@@ -20,7 +20,7 @@ BFS
 
 Connected Components
 
-> [Directed graph](http://blog.csdn.net/liuweiran900217/article/details/22603325)
+> [Directed graph](https://d18ky98rnyall9.cloudfront.net/_c1cf61ca46b65ee491cf7e1e835b5ee7_42DirectedGraphs.pdf?Expires=1484611200&Signature=VFXK8PKSsCIlGLDfytI1-BI1Klc588te1nKEwL1XXBvmuzghI0q7ldcGeSJt5PWENL46t8EffaeVzi1QyAEgyBBKFpz7kWOjjQSXxQgGy9thatG9ueAhik9zT4ScbDyFXg1CV18iwkxDdYEbzQc00U36BWT3C3BjQo17rM2k164_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
 
 Search
 
