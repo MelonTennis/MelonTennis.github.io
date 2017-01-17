@@ -146,3 +146,9 @@ public class Solution {
 ```
 
 O(n^2), O(n)
+
+试试公式
+
+$$a^2 + b^2 = c^2$$
+
+$$x_\mu$$

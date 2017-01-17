@@ -157,6 +157,8 @@ Block elements fill the background of the all line and inline elements only cove
 
 Well, 还是觉得自己写代码比较有用...毕竟learn by practice
 
+### CSS Rules Conflict Resolution and TExt Styling
+
 #### Style placement
 
 - Inline style: least resuable
@@ -201,6 +203,8 @@ Well, 还是觉得自己写代码比较有用...毕竟learn by practice
 ```
 
 Relative size: % and em
+
+### The Box Model and Layout
 
 #### The box model
 
@@ -271,7 +275,9 @@ Relative size: % and em
 
 - **relative container** elements moving, all within will move as well.
 
-#### Introduction to responsive design
+### Introduction to responsive design
+
+#### Media Queries
 
 - Basic media query syntax
 
@@ -282,6 +288,23 @@ Relative size: % and em
 - not to overlap breakpoints
 
 - usually base styling -> media query
+
+```html
+@media (min-width: 1200px) {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+    border: 1px solid green;
+  }
+.col-lg-1 {
+    width: 8.33%;
+  }
+.
+.
+.col-lg-12 {
+    width: 100%;
+  }
+}
+```
 
 #### Responsive design
 
@@ -299,7 +322,14 @@ Relative size: % and em
 
 - Viewport meta tag to turn off default mobile zooming
 
-#### Introduction to twitter bootstrap
+```html
+<div class="row">
+  <!-- col-lg for large devices, col-md for medium ons, col-sm for small ones -->
+  <div class="col-lg-3 col-md-6"><p>Item 1</p></div>
+</div>
+```
+
+### Introduction to twitter bootstrap
 
 突然发现这课的assignment打不开…什么鬼啦！
 
@@ -331,5 +361,5 @@ If no other rules applied, specifying col-xs0… we will keep that layout no mat
 
 SPAN means how many columns element should span. (1-12)
 
-这课东西还挺多，要是作业现在就能打开就更好了。
+~~对抗惰性蛮难的啊...~~
 
