@@ -361,5 +361,6 @@ If no other rules applied, specifying col-xs0… we will keep that layout no mat
 
 SPAN means how many columns element should span. (1-12)
 
-~~对抗惰性蛮难的啊...~~
+[Assignment2](https://triangleweb.github.io/WebLearning/mod2_solution/)
 
+我觉得我好像不太适合写这个QAQ
