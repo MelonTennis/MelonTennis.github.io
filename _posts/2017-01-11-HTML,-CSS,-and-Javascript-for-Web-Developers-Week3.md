@@ -288,5 +288,127 @@ Different code for different size devices
   /* End Footer */
 ```
 
+### Coding Meuns
+
+#### Coding Menu categories
+
+```html
+<!-- different size with different devices -->
+<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+        <a href="single-category.html">
+          <div class="category-tile">
+            <img width="200" height="200" src="images/menu/B/B.jpg" alt="Lunch">
+            <span>Lunch</span>
+          </div>
+        </a>
+      </div>
+```
+
+```css
+/* clickable -> when the mouse is float on that element */
+.category-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+/* next slibing of this class */
+#menu-categories-title + div {
+  margin-bottom: 50px;
+}
+/* define an extra extra small device */
+  .col-xxs-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 100%;
+  }
+```
+
+#### Coding the single category page
+
+```html
+    <div class="menu-item-tile col-md-6">
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="menu-item-photo">
+              <div>D01</div>
+              <img class="img-responsive" width="250" height="150" src="images/menu/B/B-1.jpg" alt="Item">
+            </div>
+            <div class="menu-item-price">$10.95<span> (pint)</span> $14.95 <span>(quart)</span></div>
+          </div>
+          <div class="menu-item-description col-sm-7">
+            <h3 class="menu-item-title">Veal with Mixed Vegetables</h3>
+            <p class="menu-item-details">...</p>
+          </div>
+        </div>
+        <hr class="visible-xs">
+      </div>
+```
+
+```css
+/* SINGLE CATEGORY PAGE */
+.menu-item-tile {
+  margin-bottom: 25px;
+}
+.menu-item-tile hr {
+  width: 80%;
+}
+.menu-item-tile .menu-item-price {
+  font-size: 1.1em;
+  text-align: right;
+  margin-top: -15px;
+  margin-right: -15px;
+}
+.menu-item-tile .menu-item-price span {
+  font-size: .6em;
+}
+.menu-item-photo {
+  position: relative;
+  border: 2px solid #3F0C1F; 
+  overflow: hidden;
+  padding: 0;
+  margin-right: -15px;
+  margin-left: auto;
+  margin-bottom: 20px;
+  max-width: 250px;
+}
+.menu-item-photo div {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80px;
+  background-color: #557c3e;
+  text-align: center;
+}
+.menu-item-description {
+  padding-right: 30px;
+}
+h3.menu-item-title {
+  margin: 0 0 10px;
+}
+.menu-item-details {
+  font-size: .9em;
+  font-style: italic;
+}
+/* END SINGLE CATEGORY PAGE */
+```
+
+```html
+<!-- when the previous div has long descriptions -->     
+<!-- Add after every 2nd menu-item-tile -->
+      <div class="clearfix visible-lg-block visible-md-block">
+```
+
+```html
+            <li class="visible-xs">
+              <a href="index.html">
+                <span class="glyphicon glyphicon-home"></span> Home</a>
+            </li>
+            <li class="active">
+              <a href="menu-categories.html">
+                <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a>
+            </li>
+```
+
 
 
