@@ -29,9 +29,9 @@ Learning CS is a choice, at least there are free cookies🍪 :)
 
 诶(///▽///) 要把自己的期望写下来吗？
 
-可能是想学***Peloton***...
+可能是想学 $\scr{Peloton}$
 
-
+***Peloton***...
 
 <center>
     <p><img src=""></p>
