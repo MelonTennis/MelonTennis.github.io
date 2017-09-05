@@ -26,7 +26,7 @@ Learning CS is a choice, at least there are free cookies🍪 :)
 …..._(:з」∠)\_
 
 <center>
-    <p><img src=""></p>
+    <p><img src="https://raw.githubusercontent.com/YijiaJin/Plot/master/WechatIMG1.jpeg"></p>
 </center>
 
 
