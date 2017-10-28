@@ -1,2 +1,59 @@
-<script>window.googleJavaScriptRedirect=1</script><META name="referrer" content="origin"><script>var n={navigateTo:function(b,a,d){if(b!=a&&b.google){if(b.google.r){b.google.r=0;b.location.href=d;a.location.replace("about:blank");}}else{a.location.replace(d);}}};n.navigateTo(window.parent,window,"https://techcrunch.com/");
-</script><noscript><META http-equiv="refresh" content="0;URL='https://techcrunch.com/'"></noscript>
+---
+layout: page
+title: Learning Centre🍪
+description: "人生得意须尽欢 | My heart is in the work"
+header-img: "img/blueflower.jpg"
+permalink: /category/
+---
+<head>
+	<script src="https://app.engati.com/static/js/chat_widget.js"></script>
+</head>
+
+<body>
+	<script>EngtChat.init({"bot_key": "f1e1a2c5d1184732", "e":"p", "bot_name":"Bot1","welcome_msg":true});</script>
+</body>
+
+<div class="page clearfix">
+    <div class="right">
+        <div class="wrap">
+            <h2 style="font-weight:bold"> &nbsp;&nbsp;&nbsp;&nbsp;Content</h2>
+            <!-- Content -->
+            <div class="side-category">
+                <ul id="content-side" class="content-ul">
+                    {% for category in site.categories%}
+                    <li>
+                        <a class="scroll" href="#{{ category | first }}">
+                            {{ category | first }} ({{ category | last | size }})
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="left">
+        <hr>
+        <ul>
+            {% for category in site.categories %}
+            <h2 id="{{category | first}}">{{category | first}}</h2>
+                {% for posts in category  %}
+                    {% for post in posts %}
+                        {% if post.url %}
+                        <li>
+                            <time>
+                            {{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.
+                            </time>
+                            <a class="title" href="{{ post.url }}">{{ post.title }}</a>
+    
+                            {% include category.html %}
+                            {% include tag.html %}
+                        </li>
+                        {% endif %}
+                    {% endfor %}
+                {% endfor %}
+            {% endfor %}
+        </ul>
+    </div>
+
+</div>
+<script src="{{ "/js/pageContent.js " | prepend: site.baseurl }}" charset="utf-8"></script>
