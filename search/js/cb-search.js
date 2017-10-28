@@ -99,7 +99,7 @@
 
                               return array;
                             }
-                        items = shuffleFunc(items);
+                        shuffleFunc(items);
                         return items;
                     }
                 });
