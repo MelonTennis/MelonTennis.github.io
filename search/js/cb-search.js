@@ -63,10 +63,8 @@
 
         $.getJSON("/search/cb-search.json").done(function (data) {
             if (data.code == 0) {
-                var shift = Math.floor(Math.random()*10);
                 for (var index in data.data) {
-                    idx = (index + shift)%data.data.length;
-                    var item = data.data[idx];
+                    var item = data.data[index];
                     names.push(item.title);
                     urls.push(item.url);
                 }
