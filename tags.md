@@ -1,8 +1,8 @@
 ---
-title: Tags🍪
+title: Tags
 layout: page2
 description: "春风又绿江南岸 | Less is more"
-header-img: "img/watergreen.jpg"
+header-img: "img/cmu2.jpg"
 ---
 
 ### **· TAGS ～ 🏷️列表**
