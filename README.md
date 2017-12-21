@@ -1,6 +1,6 @@
 ### README:
 
-Welcome to my blog [freeCookie🍪](https://yijiajin.github.io) 👈 
+Welcome to my blog [freeCookie](https://yijiajin.github.io) 👈 
 
 This page changes from 👇 thanks to them. 
 
