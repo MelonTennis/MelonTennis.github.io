@@ -27,9 +27,11 @@ Nice to meet you.
 
 
 
-| —                                        | —                                        |
-| ---------------------------------------- | ---------------------------------------- |
-| <img src="https://raw.githubusercontent.com/YijiaJin/Plot/master/xianyu1.jpeg" style="zoom:60%"> | <img src="https://raw.githubusercontent.com/YijiaJin/Plot/master/xianyu2.jpeg" style="zoom:60%"> |
+<img src="https://raw.githubusercontent.com/YijiaJin/Plot/master/xianyu1.jpeg" style="zoom:40%">
+
+<img src="https://raw.githubusercontent.com/YijiaJin/Plot/master/xianyu2.jpeg" style="zoom:40%">
+
+
 
 
 
