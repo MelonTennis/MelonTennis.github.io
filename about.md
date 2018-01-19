@@ -24,3 +24,12 @@ Nice to meet you.
 总而言之因为崇拜小土刀前辈所以也想记录一下学习CS的历程。
 
 幼儿园文笔就请多指教了。
+
+
+
+| —                                        | —                                        |
+| ---------------------------------------- | ---------------------------------------- |
+| <img src="https://raw.githubusercontent.com/YijiaJin/Plot/master/xianyu1.jpeg" style="zoom:60%"> | <img src="https://raw.githubusercontent.com/YijiaJin/Plot/master/xianyu2.jpeg" style="zoom:60%"> |
+
+
+
