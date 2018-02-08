@@ -24,13 +24,3 @@ Nice to meet you.
 <img src="https://raw.githubusercontent.com/YijiaJin/Plot/master/xianyu1.jpeg" style="zoom:40%">
 
 <img src="https://raw.githubusercontent.com/YijiaJin/Plot/master/xianyu2.jpeg" style="zoom:40%">
-
-日子过的太着急都忘了当初从大二开始叨叨转CS的初心了(/ω＼)
-
-觉得很神奇！当时看了一个什么编程比赛觉得特别厉害啊！
-
-太帅了我也要～！
-
-然后手机小游戏过不去想要写脚本过去就觉得很厉害诶～
-
-嗯 只喜欢CS方向的男孩子╮(╯▽╰)╭
