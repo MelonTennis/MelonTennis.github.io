@@ -15,7 +15,13 @@ Nice to meet you.
 
 青山不改绿水长流:)
 
-<img src="https://raw.githubusercontent.com/YijiaJin/Plot/master/hunt.jpeg" style="zoom:15%">
+<img src="https://raw.githubusercontent.com/YijiaJin/Plot/master/hunt.jpeg" style="zoom:18%">
+
+
+
+
+
+
 
 
 
