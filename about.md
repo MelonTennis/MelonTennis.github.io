@@ -2,7 +2,7 @@
 layout: page
 title: "Nice to meet you"
 description: "续命法宝小饼干 | You are amazing"
-header-img: "img/cmu2.jpg"
+header-img: "img/cmu22.jpg"
 ---
 
 ### 🍪🍪🍪
@@ -13,7 +13,11 @@ Nice to meet you.
 
 ### 🍪🍪🍪
 
-感谢同学爸爸，TA爸爸，队友爸爸
+青山不改绿水长流:)
 
-和爸爸们的交集并集
+<img src="https://raw.githubusercontent.com/YijiaJin/Plot/master/fall.jpeg" style="zoom:35%">
+
+<img src="https://raw.githubusercontent.com/YijiaJin/Plot/master/winter.jpeg" style="zoom:35%">
+
+<img src="https://raw.githubusercontent.com/YijiaJin/Plot/master/summer.jpeg" style="zoom:35%">
 
