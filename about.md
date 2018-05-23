@@ -2,7 +2,7 @@
 layout: page
 title: "Nice to meet you"
 description: "续命法宝小饼干 | You are amazing"
-header-img: "img/cmu22.jpg"
+header-img: "img/cmu22.jpeg"
 ---
 
 ### 🍪🍪🍪
