@@ -19,8 +19,8 @@ favicon: img/favicon.png
 
 douban_username:  
 twitter_username: YijiaJin
-github_username: YijiaJin
-facebook_username: 100009010019145
+github_username: YijiaJins
+facebook_username: 
 weibo_username: 
 zhihu_username: yi-zhi-53
 
@@ -69,7 +69,7 @@ bing_verify:
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "❤️ 💛 Lifelong Learner 💚 💙"
+sidebar-about-description: "～瞎拍脑袋写一切～"
 sidebar-avatar: /img/cat.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
@@ -97,6 +97,10 @@ friends: [
     {
         title: "Truly",
         herf: "https://francisleon.github.io"
+    },
+    {
+        title: "小土刀前辈",
+        herf: "https://wdxmzy.com"
     }
 ]
 
