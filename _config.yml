@@ -98,10 +98,6 @@ friends: [
         title: "Truly",
         herf: "https://francisleon.github.io"
     },
-    {
-        title: "小土刀前辈",
-        herf: "https://wdxmzy.com"
-    }
 ]
 
 gem 'jekyll-paginate', group: :jekyll_plugins
