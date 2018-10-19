@@ -5,7 +5,7 @@ subtitle: Compare LinkedHashSet and HashSet
 date: 2016-12-18
 tags: [Java, Hashset, Linkedhashset]
 description: LinkedHashSet & HashSet
-categories: Language  
+categories: DataStructure  
 catalog: true
 ---
 ### HashSet 和 LinkedHashSet

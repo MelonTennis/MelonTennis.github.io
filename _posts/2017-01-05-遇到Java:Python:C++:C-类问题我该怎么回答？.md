@@ -1,9 +1,9 @@
 ---
 layout: post
 title: 遇到一个Java/Python/C++/C 类问题_(:з」∠)_
-subtitle: 搞技术的总是要不断学习
+subtitle: xia xue xi
 date: 2017-01-05
-categories: Language
+categories: Other
 tags: [Java, Python, C/C++, GC]
 catalog: true
 ---
