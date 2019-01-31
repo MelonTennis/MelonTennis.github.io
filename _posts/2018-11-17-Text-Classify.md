@@ -4,7 +4,7 @@ title: Text Classification Notes
 subtitle: 我到底在工作个啥。。。
 date: 2018-11-17
 categories: Note
-tags: [Note]
+tags: [ML]
 catalog: true
 ---
 
