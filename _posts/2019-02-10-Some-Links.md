@@ -1,6 +1,6 @@
 ---
 layout: post
-title: System Design Notes 〇
+title: 一些资源
 subtitle: Some Links
 date: 2019-02-10
 categories: Note
@@ -9,7 +9,19 @@ catalog: true
 
 ---
 
-### System Design 笔记 〇
+
+
+### 一些资源
+
+#### Leetcode 相关
+
+我又开始刷题了。前些日子复习并查集，看了看之前的note，两年过去了好像也没啥长进。然后我就先按tag刷刷吧～
+
+[Leetcode 400- 分类](https://cspiration.com/leetcodeClassification#10301)
+
+[Lintcode Ladder](https://www.lintcode.com/ladder/)
+
+#### System Design 相关
 
 系统设计，一塌糊涂。不学一下，情何以堪。  \_(:з」∠)_
 
@@ -21,7 +33,11 @@ catalog: true
 
 [Git: System Design Cheatsheet](https://gist.github.com/vasanthk/485d1c25737e8e72759f)
 
+[Hiredintech](https://www.hiredintech.com/courses) 免费资源！
+
 [Grokking the System Design](https://www.educative.io/collection/5668639101419520/5649050225344512) 79刀一些资料，也可以承受。据说还行，买不买呢？
+
+[Highscalability](http://highscalability.com/all-time-favorites/) 介绍流行网站架构
 
 一些别人的笔记：
 
