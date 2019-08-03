@@ -1,6 +1,6 @@
 ### README:
 
-Welcome to my blog [freeCookie](https://yijiajin.github.io) 👈 
+Welcome to my blog [freeCookie](https://melontennis.github.io) 👈 
 
 This page changes from 👇 thanks to them. 
 
@@ -16,11 +16,6 @@ Interesting git pages :)
 
 -------------------
 
-### freeCookie_免费小🍪
-
-瞎拍脑袋写一切。
-
-日常：拍脑袋一写，嘿～！然后就出好几个bug╮(╯▽╰)╭
 
 
 
