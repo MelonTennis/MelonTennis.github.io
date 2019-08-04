@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Nice to meet you"
+title: "Welcome"
 description: "续命法宝小饼干 | You are amazing"
 header-img: "img/cmu_22.jpeg"
 ---

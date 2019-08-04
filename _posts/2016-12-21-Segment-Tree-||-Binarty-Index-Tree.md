@@ -28,6 +28,8 @@ catalog: true
 > [中文](http://poj.org/summerschool/1_interval_tree.pdf)
 >
 > 设B[ ]表示数组A[ ]的树状数组，B[i]表示A[i - 2^k]到A[i]的和。 k 表示***i***二进制表示法末尾0的个数。 👆图。-> B[i]存有***i***最后一位1所在的位置对应数量的A内元素的和。比如 8(2) = 1000, B[8] = A[1] + A[2] +…+ A[8].
+>
+> [2D-BIT](https://www.geeksforgeeks.org/two-dimensional-binary-indexed-tree-or-fenwick-tree/)
 
 基本操作：
 
