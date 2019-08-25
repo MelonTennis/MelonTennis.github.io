@@ -35,7 +35,7 @@ catalog: true
 
 [Hiredintech](https://www.hiredintech.com/courses) 免费资源！
 
-[Grokking the System Design](https://www.educative.io/collection/5668639101419520/5649050225344512) 79刀一些资料，也可以承受。据说还行，买不买呢？
+[Grokking the System Design](https://www.educative.io/collection/5668639101419520/5649050225344512) 79刀一些资料，也可以承受。据说还行，买不买呢？（他家还有其他课觉得不错！地里还提供了折扣
 
 [Highscalability](http://highscalability.com/all-time-favorites/) 介绍流行网站架构
 
