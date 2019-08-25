@@ -123,8 +123,8 @@ class Solution {
 class Solution {
     public int knightDialer(int N) {
         if(N == 0)  return 0;
-        int[][] step = {{4, 6}, {6, 8}, {7, 9}, {4, 8}, {0, 9, 3}, {}, {1, 7, 0}, 
-                        {2, 6}, {1, 3}, {2, 4}};
+        int[][] step = [[4, 6], [6, 8], [7, 9], [4, 8], [0, 9, 3], [], [1, 7, 0], 
+                        [2, 6], [1, 3], [2, 4]]; 
         int[] dp = new int[10];
         int MOD = 1000000000 + 7;
         Arrays.fill(dp, 1);
