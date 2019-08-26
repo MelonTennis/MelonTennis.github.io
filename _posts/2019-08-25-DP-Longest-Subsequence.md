@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Leetcode - Longest Subsequence
-subtitle: LC300, LC673, LC516, LC1027, LC873, LC368
+subtitle: LC300, LC376, LC673, LC516, LC1027, LC873, LC368, LC842, LC960
 date: 2019-08-25
 categories: Leetcode
 tags: [DP]
@@ -43,6 +43,24 @@ class Solution {
             }
         }
         return size;
+    }
+}
+```
+
+
+
+### 376. Wiggle Subsequence
+
+```java
+class Solution {
+    public int wiggleMaxLength(int[] nums) {
+        if(nums.length < 2) return nums.length;
+        int down = 1, up = 1;
+        for(int i = 1; i < nums.length; i++) {
+            if(nums[i] > nums[i - 1])   up = down + 1;
+            if(nums[i] < nums[i - 1])   down = up + 1;
+        }
+        return Math.max(up, down);
     }
 }
 ```
@@ -171,6 +189,51 @@ class Solution {
 
 
 
+### 842. Split Array into Fibonacci Sequence
+
+同样都是找斐波那契，这题dfs找到一个有效结果。O(N!)
+
+```java
+class Solution {
+    public List<Integer> splitIntoFibonacci(String S) {
+        List<Integer> res = new ArrayList<>();
+        if(dfs(S, res, 0))  return res;
+        return new ArrayList<Integer>();
+    }
+    
+    private boolean dfs(String S, List<Integer> res, int start) {
+        if(S == null)   return false;
+        int len = S.length();
+        if(start == len && res.size() >= 3) {
+            return true;
+        }
+        if(start >= len)    return false;
+        for(int i = start; i < len; i++) {
+            if(i > start && S.charAt(start) == '0') break;
+            long num = Long.valueOf(S.substring(start, i + 1));
+            if(num > Integer.MAX_VALUE) break;
+            if(res.size() < 2) {
+                res.add((int)num);
+                if(dfs(S, res, i + 1))  return true;
+                res.remove(res.size() - 1);
+            } else {
+                int cur = (int)num;
+                int sz = res.size();
+                int pre_sum = res.get(sz - 1) + res.get(sz - 2);
+                if(cur < pre_sum)   continue;
+                if(cur > pre_sum)   break;
+                res.add(cur);
+                if(dfs(S, res, i + 1))  return true;
+                res.remove(res.size() - 1);
+            }
+        }
+        return false;
+    }
+}
+```
+
+
+
 ### 368. Largest Divisible Subset
 
 用另一个数组来记录前面的状态。
@@ -219,3 +282,46 @@ class Solution {
     }
 }
 ```
+
+
+
+### LC960. Delete Columns to Make Sorted III - Hard
+
+这题求最少删去多少列能够让数组A里面的字符串全部符合字母递增排序。一开始陷入了迷惑，看到了[Lee215](<https://leetcode.com/problems/delete-columns-to-make-sorted-iii/discuss/205679/C%2B%2BJavaPython-Maximum-Increasing-Subsequence>)的解答才会做。这里把最少删去多少列转换为最多保留多少列就好写状态转换方程了。难怪事hard题。dp[i]表示对于每一个字符串a，以i为结尾的递增subsequence最长长度。O(N * N * K), O(N).
+
+```java
+class Solution {
+    public int minDeletionSize(String[] A) {
+        // convert to longest increase subsequence
+        // O(n * n * k)
+        int n = A[0].length();
+        int k = A.length;
+        // means max length of increase subsequence stop at index i
+        // for each str in A
+        // dp[i] = max(dp[i], dp[j] + 1)
+        int[] dp = new int[n];
+        Arrays.fill(dp, 1);
+        int res = n - 1;
+        for(int i = 0; i < n; i++) {
+            for(int j = 0; j < i; j++) {
+                int m = 0;
+                for(m = 0; m < k; m++) {
+                    if(A[m].charAt(i) < A[m].charAt(j)) {
+                        break;
+                    }
+                }
+                if(m == k && dp[i] < dp[j] + 1) {
+                    dp[i] = dp[j] + 1;
+                }
+            }
+            res = Math.min(res, n - dp[i]);
+        }
+        return res;
+    }
+}
+```
+
+
+
+这一题是[LC 955 Delete Columns to Make Sorted II](<https://leetcode.com/problems/delete-columns-to-make-sorted-ii/>) 的followup。LC955是一个greedy问题，[这篇博客](<https://blog.csdn.net/creat2012/article/details/40581081>)讲的很好， 贪心问题正确的条件是每一步的最优解都包含上一步的最优解。LC960局部最优解不一定包含上一步的最优解，因此要用DP来解决。
+

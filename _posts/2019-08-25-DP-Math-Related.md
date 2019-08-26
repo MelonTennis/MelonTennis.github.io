@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Leetcode - Math Related
-subtitle: LC813, LC837
+subtitle: LC813, LC837, LC1058
 date: 2019-08-25
 categories: Leetcode
 tags: [DP]
@@ -72,3 +72,35 @@ class Solution {
     }
 }
 ```
+
+
+
+### 1058. Minimize Rounding Error to Meet Target
+
+这题的trick是转换为N个数有多少个取floor多少个取ceil的dp。因为floor和ceil差1，而cost就转换为ceil比floor多出来的误差。O(N), O(N).
+
+```java
+class Solution {
+    public String minimizeError(String[] prices, int target) {
+        if(prices == null || prices.length == 0)    return "-1";
+        int n = prices.length;
+        double[] diff = new double[n];
+        double top = 0, bottom = 0, sum = 0;
+        for(int i = 0; i < n; i++) {
+            double num = Double.parseDouble(prices[i]);
+            double ceil_diff = Math.ceil(num) - num;
+            double floor_diff = num - Math.floor(num);
+            diff[i] = ceil_diff - floor_diff;
+            top += Math.ceil(num);
+            bottom += Math.floor(num);
+            sum += floor_diff;
+        }
+        if((double) target < bottom || (double) target > top)   return "-1";
+        int ceil_num = target - (int) bottom;
+        Arrays.sort(diff);
+        while(ceil_num-- > 0)   sum += diff[ceil_num];
+        return String.format ("%.3f", sum);
+    }
+}
+```
+
