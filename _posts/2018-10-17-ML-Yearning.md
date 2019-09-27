@@ -14,7 +14,7 @@ catalog: true
 
 嗯，上面这段话就像是初高中评论教材／教师时自己写的评语。这么多年没有长进。（笑
 
-[这本书的链接](http://www.mlyearning.org) 上输入邮箱就可以得到最新手稿啦～ 
+[这本书的链接](<https://www.deeplearning.ai/machine-learning-yearning/>) 上输入邮箱就可以得到最新手稿啦～ 
 
 感谢大佬免费提供教育资源( ´▽` )ﾉ
 

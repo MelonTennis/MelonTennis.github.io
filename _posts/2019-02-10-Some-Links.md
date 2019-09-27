@@ -35,9 +35,11 @@ catalog: true
 
 [Hiredintech](https://www.hiredintech.com/courses) 免费资源！
 
-[Grokking the System Design](https://www.educative.io/collection/5668639101419520/5649050225344512) 79刀一些资料，也可以承受。据说还行，买不买呢？（他家还有其他课觉得不错！地里还提供了折扣
+[Grokking the System Design](https://www.educative.io/collection/5668639101419520/5649050225344512) ~~79刀一些资料，也可以承受。据说还行，买不买呢~~  已买，不错。
 
 [Highscalability](http://highscalability.com/all-time-favorites/) 介绍流行网站架构
+
+一些大公司的present: [Amazon](<https://www.allthingsdistributed.com/2007/10/amazons_dynamo.html>), [Google](<http://www.cs.cornell.edu/projects/ladis2009/talks/dean-keynote-ladis2009.pdf>), [Google](<http://static.googleusercontent.com/media/research.google.com/en/us/people/jeff/stanford-295-talk.pdf>)
 
 一些别人的笔记：
 

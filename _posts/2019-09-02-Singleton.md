@@ -17,7 +17,7 @@ catalog: true
 
 [Singleton Pattern](https://en.wikipedia.org/wiki/Singleton_pattern),  a class is restricted to have one single instance. 
 
-代码参考了[如何正确的写出单例模式](http://wuchong.me/blog/2014/08/28/how-to-correctly-write-singleton-pattern/)和[Singleton Design Pattern | Implementation](https://www.geeksforgeeks.org/singleton-design-pattern/).
+代码参考了[如何正确的写出单例模式](http://wuchong.me/blog/2014/08/28/how-to-correctly-write-singleton-pattern/)和[Singleton Design Pattern Implementation](https://www.geeksforgeeks.org/singleton-design-pattern/).
 
 ### Lazy 懒汉式
 
